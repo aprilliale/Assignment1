@@ -254,54 +254,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Membership Card (Discount 7%)" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="380dp"
-                android:layout_height="191dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                cardview:cardCornerRadius="10dp"
-                android:layout_marginBottom="60dp">
-
-                <TextView
-                    android:id="@+id/textTitle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="20dp"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:fontFamily="sans-serif-black"
-                    android:text="Order Detail" />
-
-                <TextView
-                    android:id="@+id/textcoba1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="60dp"
-                    android:text="Total Item" />
-
-                <TextView
-                    android:id="@+id/textcoba2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="80dp"
-                    android:text="Price" />
-
-                <TextView
-                    android:id="@+id/textcoba3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="100dp"
-                    android:text="Additional Menu"
-                    />
-
-            </androidx.cardview.widget.CardView>
+                android:text="Membership Card (Discount 7%)"
+                android:layout_marginBottom="60dp"/>
 
 
         </LinearLayout>

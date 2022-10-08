@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
         RadioButton pickles = findViewById(R.id.radioPickles);
         RadioButton sauce = findViewById(R.id.radioSauce);
 
-        TextView coba1 = findViewById(R.id.textcoba1);
+       /* TextView coba1 = findViewById(R.id.textcoba1);
         TextView coba2 = findViewById(R.id.textcoba2);
-        TextView coba3 = findViewById(R.id.textcoba3);
+        TextView coba3 = findViewById(R.id.textcoba3);*/
 
 
         buttonOrder.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 int countSalad = Integer.parseInt(cSalad);
 
                 int sendItems = countPasta + countPizza + countSalad;
+                String l = String.valueOf(sendItems);
 
                 int amountPizza = countPizza * 16000;
                 int amountPasta = countPasta * 11000;
@@ -70,32 +71,33 @@ public class MainActivity extends AppCompatActivity {
 
                 int t=amountPasta+amountPizza+amountSalad;
 
-                if (membershipCard.isChecked()) {
+                /*if (membershipCard.isChecked()) {
                     //membershipCard.setTextColor(Color.parseColor("059C54"));
                     int b = (amountPasta+amountPizza+amountSalad)*7/100;
                     t= t-b;
-                }
+                }*/
 
-                coba1.setText("Total Items: "+sendItems);
+                /*coba1.setText("Total Items: "+sendItems);
                 coba2.setText("Total Price: "+t);
                 coba3.setText("Additional Menu: "+radioSelect);
 
                 coba1.setTextColor(Color.BLUE);
                 coba2.setTextColor(Color.RED);
-                coba3.setTextColor(getResources().getColor(R.color.textcolor));
+                coba3.setTextColor(getResources().getColor(R.color.textcolor));*/
 
-                /*Intent i = new Intent(getApplicationContext(), historyOrder.class);
-                i.putExtra("Total", sendItems);
+                Intent i = new Intent(getApplicationContext(), historyOrder.class);
+                i.putExtra("Total", l);
                 i.putExtra("Selection", radioSelect);
                 if (membershipCard.isChecked()) {
                     //membershipCard.setTextColor(Color.parseColor("059C54"));
-                    int b = (amountPasta+amountPizza+amountSalad)*7/100;
+                    int b = t*7/100;
                     t = t-b;
                 }
 
-                i.putExtra("Price",t);
+                String n = String.valueOf(t);
+                i.putExtra("Price",n);
 
-                startActivity(i);*/
+                startActivity(i);
 
             }
         });

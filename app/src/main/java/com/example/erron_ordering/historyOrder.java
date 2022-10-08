@@ -25,20 +25,20 @@ public class historyOrder extends AppCompatActivity {
         TextView textAddiMenu = findViewById(R.id.textAddiMenus);
         TextView showAddMenu = findViewById(R.id.showAddMenu);
 
-        /*showItems.setTextColor(Color.BLUE);
+        showItems.setTextColor(Color.BLUE);
         textItems.setTextColor(Color.BLUE);
         textTotal.setTextColor(Color.RED);
         showAmount.setTextColor(Color.RED);
-        textAddiMenu.setTextColor(Color.parseColor("30d5c8"));
-        showAddMenu.setTextColor(Color.parseColor("30d5c8"));*/
+        textAddiMenu.setTextColor(getResources().getColor(R.color.textcolor));
+        showAddMenu.setTextColor(getResources().getColor(R.color.textcolor));
 
-        int items = getIntent().getIntExtra("Total", 0);
+        String items = getIntent().getStringExtra("Total");
         String radioselect = getIntent().getStringExtra("Selection");
-        int totalPrice = getIntent().getIntExtra("Price",0);
+        String totalPrice = getIntent().getStringExtra("Price");
 
         showAmount.setText(totalPrice);
         showAddMenu.setText(radioselect);
-        //showItems.setText(items);
+        showItems.setText(items);
 
 
         buttonOrder.setOnClickListener(new View.OnClickListener() {
