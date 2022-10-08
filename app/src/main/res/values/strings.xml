@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Erron Ordering</string>
+    <string name="menu">Menus</string>
+    <string name="pasta">Pasta</string>
+    <string name="pizza">Pizza</string>
+    <string name="salad">Salad</string>
+    <string name="pickles">Pickles</string>
+    <string name="sauce">Sauce</string>
+    <string name="addmenu">Additional Menus</string>
+    <string name="history">Order History</string>
+</resources>
